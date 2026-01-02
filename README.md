@@ -78,7 +78,14 @@ Answer these questions:
 1. What was the average response time?
 2. What was the throughput (requests/second)?
 3. Did any requests fail?
-4. Which endpoint was slowest?
+yes, GET /delay/1
+4. Which endpoint was slowest? 
+POST /post
+
+Endpoint	Avg (ms)	Max (ms)	Error %	Throughput (req/sec)
+GET /get	302	1337	0%	5.16
+POST /post	296	1659	3.33%	5.52
+GET /delay/1	0	1	100%	5.73
 
 ## Deliverables
 1. JMeter test plan file (`.jmx`)
